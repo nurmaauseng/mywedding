@@ -17,83 +17,41 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#f8f3ef;
-color:#444;
+background:#fff;
 }
 
-section{
-padding:80px 20px;
-text-align:center;
+img{
+display:block;
+width:100%;
+height:auto;
 }
 
 .cover{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:
-linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),
-url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
-}
-.cover h1{
-font-size:54px;
-color:#8b6a4b;
-margin-bottom:15px;
+position:relative;
 }
 
-.cover p{
-font-size:22px;
-margin-bottom:35px;
+.open-btn{
+position:absolute;
+left:50%;
+top:73%;
+transform:translate(-50%,-50%);
+width:230px;
+height:70px;
+cursor:pointer;
+background:transparent;
+border:none;
 }
 
-.btn{
-display:inline-block;
-padding:16px 45px;
-background:#b88b5d;
-color:white;
-text-decoration:none;
-border-radius:40px;
-font-size:18px;
-}
-
-.story{
-background:white;
-}
-
-.schedule{
-background:#faf6f2;
-}
-
-footer{
-padding:40px;
-background:#8b6a4b;
-color:white;
-text-align:center;
-}
-
-.bottom-menu{
-position:fixed;
-bottom:0;
-left:0;
+.page{
 width:100%;
-display:flex;
-justify-content:space-around;
-background:white;
-box-shadow:0 -2px 8px rgba(0,0,0,.15);
-padding:12px 0;
 }
 
-.bottom-menu a{
-text-decoration:none;
-color:#8b6a4b;
-font-size:14px;
-font-weight:bold;
+@media (max-width:768px){
+.open-btn{
+width:170px;
+height:55px;
+top:73%;
+}
 }
 </style>
 
@@ -101,60 +59,35 @@ font-weight:bold;
 
 <body>
 
-<section class="cover">
+<div class="cover">
+<img src="Cover.png.png">
+<a href="#page1">
+<button class="open-btn"></button>
+</a>
+</div>
 
-<h2>Bismillahirrahmanirrahim</h2>
+<div id="page1" class="page">
+<img src="page1.png.png">
+</div>
 
-<h1>Nurma</h1>
+<div class="page">
+<img src="page2.png.png">
+</div>
 
-<p>&</p>
+<div class="page">
+<img src="page3.png.png">
+</div>
 
-<h1>เจ้าบ่าว</h1>
+<div class="page">
+<img src="page4.png.png">
+</div>
 
-<p>28 December 2026</p>
+<div class="page">
+<img src="page5.png.png">
+</div>
 
-<a href="#story" class="btn">เปิดการ์ด</a>
-
-</section>
-
-<section id="story" class="story">
-
-<h2>เรื่องราวของเรา</h2>
-
-<br>
-
-<p>
-ยินดีต้อนรับสู่เว็บไซต์งานแต่งงานของเรา
-</p>
-
-</section>
-
-<section id="schedule" class="schedule">
-
-<h2>กำหนดการ</h2>
-
-<br>
-
-<p>
-จะเพิ่มรายละเอียดในขั้นตอนต่อไป
-</p>
-
-</section>
-
-<footer>
-
-ขอบคุณที่ร่วมเป็นส่วนหนึ่งในวันสำคัญของเรา 🤍
-
-</footer>
-
-<div class="bottom-menu">
-
-<a href="#">🏠 หน้าแรก</a>
-
-<a href="#story">❤️ เรื่องราว</a>
-
-<a href="#schedule">📅 กำหนดการ</a>
-
+<div class="page">
+<img src="page6.png.png">
 </div>
 
 </body>
