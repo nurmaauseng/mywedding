@@ -2,80 +2,101 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wedding Invitation</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
 
 body{
-margin:0;
 font-family:Arial,sans-serif;
-background:#f8f2ed;
+background:#f8f3ef;
+color:#444;
+}
+
+section{
+padding:80px 20px;
 text-align:center;
 }
 
 .cover{
-
 height:100vh;
-
 display:flex;
-
 flex-direction:column;
-
 justify-content:center;
-
 align-items:center;
-
-padding:20px;
-
+background:linear-gradient(#f9f4ef,#efe5db);
 }
 
-h1{
-
-font-size:42px;
-
-color:#8d6e63;
-
-margin-bottom:10px;
-
+.cover h1{
+font-size:54px;
+color:#8b6a4b;
+margin-bottom:15px;
 }
 
-h2{
-
+.cover p{
 font-size:22px;
-
-color:#666;
-
-font-weight:normal;
-
+margin-bottom:35px;
 }
 
-button{
-
-margin-top:40px;
-
-padding:18px 45px;
-
-border:none;
-
-border-radius:50px;
-
-background:#b88a5a;
-
+.btn{
+display:inline-block;
+padding:16px 45px;
+background:#b88b5d;
 color:white;
-
+text-decoration:none;
+border-radius:40px;
 font-size:18px;
-
 }
 
+.story{
+background:white;
+}
+
+.schedule{
+background:#faf6f2;
+}
+
+footer{
+padding:40px;
+background:#8b6a4b;
+color:white;
+text-align:center;
+}
+
+.bottom-menu{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-around;
+background:white;
+box-shadow:0 -2px 8px rgba(0,0,0,.15);
+padding:12px 0;
+}
+
+.bottom-menu a{
+text-decoration:none;
+color:#8b6a4b;
+font-size:14px;
+font-weight:bold;
+}
 </style>
 
 </head>
 
 <body>
 
-<div class="cover">
+<section class="cover">
 
 <h2>Wedding Invitation</h2>
 
@@ -83,10 +104,49 @@ font-size:18px;
 
 <p>28 December 2026</p>
 
-<button>เปิดการ์ด</button>
+<a href="#story" class="btn">เปิดการ์ด</a>
+
+</section>
+
+<section id="story" class="story">
+
+<h2>เรื่องราวของเรา</h2>
+
+<br>
+
+<p>
+ยินดีต้อนรับสู่เว็บไซต์งานแต่งงานของเรา
+</p>
+
+</section>
+
+<section id="schedule" class="schedule">
+
+<h2>กำหนดการ</h2>
+
+<br>
+
+<p>
+จะเพิ่มรายละเอียดในขั้นตอนต่อไป
+</p>
+
+</section>
+
+<footer>
+
+ขอบคุณที่ร่วมเป็นส่วนหนึ่งในวันสำคัญของเรา 🤍
+
+</footer>
+
+<div class="bottom-menu">
+
+<a href="#">🏠 หน้าแรก</a>
+
+<a href="#story">❤️ เรื่องราว</a>
+
+<a href="#schedule">📅 กำหนดการ</a>
 
 </div>
 
 </body>
-
 </html>
